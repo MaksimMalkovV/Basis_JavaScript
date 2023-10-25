@@ -23,4 +23,10 @@
 Подсказка: Возможно, вам понадобится округление чисел и оператор %.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+let number = +parseInt(prompt('Введите число:'));
+
+let hundreds = Math.floor(number / 100 % 10);
+let tens = Math.floor(number / 10 % 10);
+let units = number % 10;
+
+alert(`В числе - ${number} количество сотен: ${hundreds}, десятков: ${tens}, единиц: ${units}`);
